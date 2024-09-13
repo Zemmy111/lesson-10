@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced selecors</title>
+    <style>
+        /*Attribute selector*/
+        input[type="text"]{
+        border:2px solid green;
+        }
+        /*Child Selector*/
+        ul>li{
+            color:black;
+        }
+        /*Sibling Selector*/
+        h3+p{
+            color:aquamarine;
+        }
+        /*Pseudo classes*/
+        a:hover{
+            color:crimson;
+        }
+        li:nth-child(2){
+            background-color: yellowgreen;
+        }
+        div:not(.div1){
+            border:2px dotted violet
+        }
+        /*Pseudo elements*/
+        li:nth-child(2)::after{
+            content:"🌮";
+        }
+        li:nth-child(1)::after{
+            content:"🍩";
+        }
+        p::first-letter{
+            font-size:40px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Advanced Selectors</h3>
+    <input type="text" placeholder="username"><br><br>
+    <input type="password" placeholder="password">
+    <ul>
+        <li>cpffee</li>
+        <li>milk</li>
+        <li>choco</li>
+    </ul>
+    <h3>This is heading</h3>
+    <p id="p1"> this is first paragraph element</p>
+    <p id="p2"> this is second paragraph element</p>
+    <a href="#">Welcome to Codingal</a>
+    <div class="div1">This is first div</div>
+    <div class="div2">This is second div</div>
+    <div class="div3">This is third div</div>
+
+    
+</body>
+</html>
